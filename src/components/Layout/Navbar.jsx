@@ -80,7 +80,7 @@ const Navbar = () => {
               Masterclass
             </Link>
             <Link to="/insights" className="text-gray-700 hover:text-accent transition-colors font-medium">
-              Insights
+              Wedding Stories
             </Link>
             <Link to="/about" className="text-gray-700 hover:text-accent transition-colors font-medium">
               About
