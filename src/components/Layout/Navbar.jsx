@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
 
             <Link to="/wedding-masterclass" className="text-gray-700 hover:text-accent transition-colors font-medium">
-              Masterclass
+              Wedding Masterclass
             </Link>
             <Link to="/insights" className="text-gray-700 hover:text-accent transition-colors font-medium">
               Wedding Stories
