@@ -16,6 +16,8 @@ import LuxuryWeddingVenues from './pages/LuxuryWeddingVenues';
 import DubaiWeddingPackages from './pages/DubaiWeddingPackages';
 import WeddingMasterclass from './pages/WeddingMasterclass';
 import InsightDetail from './pages/InsightDetail';
+import Planning from './pages/Planning';
+import Venues from './pages/Venues';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             <Route path="/insights/:id" element={<InsightDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/planning" element={<Planning />} />
+            <Route path="/venues" element={<Venues />} />
             
             {/* SEO Pages */}
             <Route path="/destination-wedding-guide" element={<DestinationWeddingGuide />} />

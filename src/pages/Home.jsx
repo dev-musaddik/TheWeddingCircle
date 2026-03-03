@@ -121,6 +121,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Cinematic Image Break */}
+      <section className="relative h-[60vh] overflow-hidden">
+        <img
+          src="/home-ceremony.png"
+          alt="Luxury outdoor destination wedding ceremony setup - rows of chairs overlooking the ocean"
+          className="w-full h-full object-cover"
+          onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000'; }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
+          <div className="text-white text-center w-full pb-12 px-4">
+            <p className="text-xl md:text-2xl font-serif italic text-gray-200 max-w-3xl mx-auto">
+              "A destination wedding isn't a product you buy. It's an experience you create."
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* What Makes Wedding Circle Different */}
       <section className="py-20 px-4 bg-secondary">
         <div className="max-w-6xl mx-auto">

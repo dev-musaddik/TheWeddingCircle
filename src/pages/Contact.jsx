@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-secondary py-20 px-4 animate-fade-in">
+    <div className="min-h-screen animate-fade-in">
       <SEO 
         title="Connect with Wedding Circle"
         description="Connect with Wedding Circle to explore collaborations, curated wedding experiences and opportunities within the global wedding industry."
@@ -62,15 +62,32 @@ const Contact = () => {
         canonicalUrl="https://theweddingcircle.com/contact"
       />
 
-      {/* Header */}
-      <div className="max-w-4xl mx-auto text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-serif mb-4">Connect with Wedding Circle</h1>
-        <p className="text-gray-600 text-lg">
-          We're here to start conversations, not sales. Tell us about your vision, needs, or collaboration ideas.
-        </p>
-      </div>
+      {/* Hero */}
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/contact-hero.png"
+            alt="Wedding Circle contact - luxury wedding stationery"
+            className="w-full h-full object-cover"
+            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1513866064536-3eff1e05c2e1?auto=format&fit=crop&q=80&w=2000'; }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+        </div>
+        <div className="relative z-10 text-center text-white px-4">
+          <div className="flex items-center justify-center mb-4">
+            <div className="h-px w-12 bg-accent"></div>
+            <span className="mx-4 text-accent text-xs tracking-[0.3em] uppercase font-light">Get in Touch</span>
+            <div className="h-px w-12 bg-accent"></div>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-serif mb-4">Connect with Wedding Circle</h1>
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+            We're here to start conversations, not sales. Tell us about your vision, needs, or collaboration ideas.
+          </p>
+        </div>
+      </section>
 
-      {/* Who Should Get in Touch */}
+      <div className="bg-secondary py-20 px-4">
+        {/* Who Should Get in Touch */}
       <div className="max-w-6xl mx-auto mb-16">
         <h2 className="text-3xl font-serif text-center mb-12">Who Should Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -237,6 +254,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

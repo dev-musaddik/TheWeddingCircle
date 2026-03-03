@@ -4,10 +4,24 @@ import { Camera, MapPin, Sparkles } from 'lucide-react';
 const ForBrides = () => {
   return (
     <div className="animate-fade-in">
-      <section className="relative bg-gradient-to-r from-gray-50 via-white to-gray-50 py-24 px-4">
-        <div className="max-w-7xl mx-auto text-center animate-slide-up">
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Experience Your Vision</h1>
-          <p className="max-w-3xl mx-auto text-xl text-gray-600 mb-8 leading-relaxed">
+      <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/for-brides-hero.png"
+            alt="Bride at luxury European destination wedding venue"
+            className="w-full h-full object-cover"
+            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1519225421980-715cb0202128?auto=format&fit=crop&q=80&w=2000'; }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center text-white px-4 animate-slide-up">
+          <div className="flex items-center justify-center mb-6">
+            <div className="h-px w-12 bg-accent"></div>
+            <span className="mx-4 text-accent text-xs tracking-[0.3em] uppercase font-light">For Couples</span>
+            <div className="h-px w-12 bg-accent"></div>
+          </div>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-6">Experience Your Vision</h1>
+          <p className="max-w-3xl mx-auto text-xl text-gray-200 leading-relaxed">
             Detailed guidance and curated experiences to help you find the perfect venue without the overwhelm.
           </p>
         </div>

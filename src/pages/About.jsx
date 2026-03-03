@@ -22,10 +22,24 @@ const About = () => {
       />
 
       {/* Hero */}
-      <section className="relative py-32 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-primary text-white">
-        <div className="max-w-4xl mx-auto text-center animate-slide-up">
+      <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/about-hero.png"
+            alt="The Wedding Circle team consulting on a luxury destination wedding"
+            className="w-full h-full object-cover"
+            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000'; }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center text-white px-4 animate-slide-up">
+          <div className="flex items-center justify-center mb-6">
+            <div className="h-px w-12 bg-accent"></div>
+            <span className="mx-4 text-accent text-xs tracking-[0.3em] uppercase font-light">Our Story</span>
+            <div className="h-px w-12 bg-accent"></div>
+          </div>
           <h1 className="text-5xl md:text-6xl font-serif mb-6">About Wedding Circle</h1>
-          <p className="text-xl md:text-2xl font-light text-gray-300 leading-relaxed">
+          <p className="text-xl md:text-2xl font-light text-gray-200 leading-relaxed max-w-3xl mx-auto">
             Built on years of global wedding experience, connecting brides, venues and industry professionals worldwide.
           </p>
         </div>
@@ -116,23 +130,33 @@ const About = () => {
 
       {/* Global Network & Cultural Insight */}
       <section className="py-20 px-4 bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-serif text-center mb-12">Global Network & Cultural Insight</h2>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-serif text-center mb-4">Global Network & Cultural Insight</h2>
           <p className="text-center text-gray-700 mb-12 text-lg max-w-3xl mx-auto">
             Wedding Circle specializes in bridging South Asian weddings with global destinations—understanding both the cultural requirements and the venue capabilities needed to deliver exceptional experiences.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-sm">
-              <h3 className="text-xl font-serif mb-4 text-accent">Cultural Expertise</h3>
-              <p className="text-gray-600 leading-relaxed">
-                We train venues on cultural requirements, positioning, and service standards needed to host high-value international clients, especially South Asian weddings.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-sm overflow-hidden shadow-lg">
+              <img
+                src="/south-asian-wedding.png"
+                alt="South Asian destination wedding at a luxury European venue"
+                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
+                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=800'; }}
+              />
             </div>
-            <div className="bg-white p-8 rounded-sm">
-              <h3 className="text-xl font-serif mb-4 text-accent">Global Connections</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Our network spans Europe, the Middle East, Asia, and beyond—connecting couples with venues that truly understand their needs.
-              </p>
+            <div className="space-y-6">
+              <div className="bg-white p-8 rounded-sm shadow-sm">
+                <h3 className="text-xl font-serif mb-4 text-accent">Cultural Expertise</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We train venues on cultural requirements, positioning, and service standards needed to host high-value international clients, especially South Asian weddings.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-sm shadow-sm">
+                <h3 className="text-xl font-serif mb-4 text-accent">Global Connections</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Our network spans Europe, the Middle East, Asia, and beyond—connecting couples with venues that truly understand their needs.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -34,9 +34,9 @@ const Navbar = () => {
               onMouseEnter={() => setPlanningOpen(true)}
               onMouseLeave={() => setPlanningOpen(false)}
             >
-              <button className="flex items-center text-gray-700 hover:text-accent transition-colors font-medium">
+              <Link to="/planning" className="flex items-center text-gray-700 hover:text-accent transition-colors font-medium">
                 Planning <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
+              </Link>
               {planningOpen && (
                 <div className="absolute top-full left-0 mt-0 w-64 bg-white shadow-lg rounded-sm py-2 animate-fade-in">
                   <Link to="/destination-wedding-guide" className="block px-4 py-3 text-sm text-gray-700 hover:bg-secondary hover:text-accent transition-colors">
@@ -58,9 +58,9 @@ const Navbar = () => {
               onMouseEnter={() => setVenuesOpen(true)}
               onMouseLeave={() => setVenuesOpen(false)}
             >
-              <button className="flex items-center text-gray-700 hover:text-accent transition-colors font-medium">
+              <Link to="/venues" className="flex items-center text-gray-700 hover:text-accent transition-colors font-medium">
                 Venues <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
+              </Link>
               {venuesOpen && (
                 <div className="absolute top-full left-0 mt-0 w-64 bg-white shadow-lg rounded-sm py-2 animate-fade-in">
                   <Link to="/luxury-wedding-venues-beach-destination" className="block px-4 py-3 text-sm text-gray-700 hover:bg-secondary hover:text-accent transition-colors">
@@ -77,10 +77,10 @@ const Navbar = () => {
             </div>
 
             <Link to="/wedding-masterclass" className="text-gray-700 hover:text-accent transition-colors font-medium">
-              Wedding Masterclass
+              Masterclass
             </Link>
             <Link to="/insights" className="text-gray-700 hover:text-accent transition-colors font-medium">
-              Wedding Stories
+              Insights
             </Link>
             <Link to="/about" className="text-gray-700 hover:text-accent transition-colors font-medium">
               About

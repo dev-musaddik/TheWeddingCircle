@@ -26,12 +26,21 @@ const WeddingMasterclass = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-primary to-black text-white py-32 px-4">
-        <div className="max-w-4xl mx-auto text-center animate-slide-up">
-          <div className="inline-block px-6 py-2 bg-accent text-primary rounded-full text-sm font-bold mb-6">
-            EXPERIENTIAL LEARNING
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/masterclass-hero.png"
+            alt="The Wedding Circle Masterclass - exclusive luxury wedding planning experience"
+            className="w-full h-full object-cover"
+            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=2000'; }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/55 to-black/75"></div>
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center text-white px-4 animate-slide-up">
+          <div className="inline-block px-6 py-2 bg-accent text-primary rounded-full text-sm font-bold mb-6 uppercase tracking-widest">
+            Experiential Learning
           </div>
-          <h1 className="text-5xl md:text-7xl font-serif mb-6">The Wedding Circle Wedding Masterclass</h1>
+          <h1 className="text-5xl md:text-7xl font-serif mb-6">The Wedding Circle<br /><span className="text-accent">Masterclass</span></h1>
           <p className="text-2xl md:text-3xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto">
             Real-world insight, experience and guidance on organising destination weddings
           </p>
